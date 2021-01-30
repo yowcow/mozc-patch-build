@@ -18,7 +18,7 @@ HOW TO USE
     make patch
 
     # apply patches
-    make patch
+    make patch DRYRUN=
 
     # build deb packages
     make build
