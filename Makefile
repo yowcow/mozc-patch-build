@@ -28,4 +28,4 @@ install:
 clean:
 	rm -rf mozc* *.deb *.ddeb
 
-.PHONY: all patch __* build install clean
+.PHONY: all patch build install clean __*

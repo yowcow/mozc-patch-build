@@ -1,9 +1,9 @@
-ubuntu-mozc
-===========
+mozc-patch-build
+================
 
-Patch, build, and install `mozc` for Ubuntu
+Patch, build, and install `mozc` packages for Ubuntu Linux
 
-Paches:
+Applying patches:
 
 * Activate Hiragana input at launch
   * http://dakusui.hatenablog.com/entry/2017/09/24/160400
@@ -25,3 +25,9 @@ HOW TO USE
 
     # install packages
     sudo make install
+
+PREREQUISITE
+------------
+
+* build-essential
+* devscripts
