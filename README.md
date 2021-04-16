@@ -23,11 +23,18 @@ HOW TO USE
     # build deb packages
     make build
 
-    # install packages
-    sudo make install
+    # install ibus-mozc packages
+    sudo make install/ibus
+    # install fcitx-mozc packages
+    sudo make install/fcitx
 
 PREREQUISITE
 ------------
 
 * build-essential
 * devscripts
+
+SEE ALSO
+--------
+
+* https://salsa.debian.org/debian/mozc

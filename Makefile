@@ -21,8 +21,8 @@ __build-dir:
 	cd $(DIR) && \
 		dpkg-buildpackage -us -uc -b
 
-install:
-	find . -maxdepth 1 -type f -name 'mozc*.deb' -or -name 'ibus-mozc*.deb' | \
+install/%:
+	find . -maxdepth 1 -type f -name 'mozc*.deb' -or -name '$*-mozc*.deb' | \
 		xargs dpkg -i
 
 clean:
