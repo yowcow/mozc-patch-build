@@ -1,6 +1,18 @@
 all:
 	apt source mozc
 
+deps:
+	apt-get -y install \
+		libibus-1.0-dev \
+		libgtk2.0-dev \
+		qtbase5-dev \
+		libqwt-qt5-dev \
+		libgwengui-qt5-dev \
+		libzinnia-dev \
+		libuim-dev \
+		fcitx-libs-dev \
+		ninja-build
+
 patch:
 	find . -type d -name 'mozc-2*' | \
 		xargs -I{} $(MAKE) DIR={} __patch-dir
@@ -28,4 +40,4 @@ install/%:
 clean:
 	rm -rf mozc* *.deb *.ddeb
 
-.PHONY: all patch build install clean __*
+.PHONY: all deps patch build install/* clean __*
